@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/select/1.3.1/css/select.dataTables.min.css">
+
+    <script type="text/javascript" charset="utf8"
+            src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/select/1.3.1/js/dataTables.select.min.js"></script>
+    <script src="jquery-3.4.1.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#example').DataTable({
+                "paging": false,
+                "ordering": false,
+                "info": false,
+                "searching": false,
+                select: {
+                    style: 'multi+shift',
+                    items: 'cell',
+                    selector: ':not(:first-child)',
+                },
+                columnDefs: [
+                    {
+                        targets: -1,
+                        className: 'dt-body-center'
+                    }
+                ]
+            });
+            
+        });
+    </script>
+</head>
+
+<body>
+
+herp derp
+</div>
+<button type="submit" id="button">Submit form</button>
+
+
+<table id="example" class="display" style="width:80%">
+    <thead>
+    <tr>
+        <th title="Field #1">Cell type label</th>
+        <th title="Field #2">packer1</th>
+        <th title="Field #3">packer2</th>
+        <th title="Field #4">taylor</th>
+        <th title="Field #5">cao</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>ABarpaaa_lineage</td>
+        <td align="right">273</td>
+        <td align="right">50</td>
+        <td align="right">675</td>
+        <td align="right">126</td>
+    </tr>
+    <tr>
+        <td>Arcade_cell</td>
+        <td align="right">434</td>
+        <td align="right">90</td>
+        <td align="right">174</td>
+        <td align="right">61</td>
+    </tr>
+    <tr>
+        <td>Body_wall_muscle</td>
+        <td align="right">17520</td>
+        <td align="right">71</td>
+        <td align="right">166</td>
+        <td align="right">113</td>
+    </tr>
+    <tr>
+        <td>Ciliated_amphid_neuron</td>
+        <td align="right">6090</td>
+        <td align="right">170</td>
+        <td align="right">883</td>
+        <td align="right">35</td>
+    </tr>
+    <tr>
+        <td>Ciliated_non_amphid_neuron</td>
+        <td align="right">4468</td>
+        <td align="right">102</td>
+        <td align="right">205</td>
+        <td align="right">60</td>
+    </tr>
+    <tr>
+        <td>Coelomocyte</td>
+        <td align="right">787</td>
+        <td align="right">477</td>
+        <td align="right">113</td>
+        <td align="right">130</td>
+    </tr>
+    <tr>
+        <td>Excretory_cell</td>
+        <td align="right">215</td>
+        <td align="right">148</td>
+        <td align="right">819</td>
+        <td align="right">59</td>
+    </tr>
+    <tr>
+        <td>Excretory_cell_parent</td>
+        <td align="right">62</td>
+        <td align="right">326</td>
+        <td align="right">362</td>
+        <td align="right">72</td>
+    </tr>
+    <tr>
+        <td>Excretory_duct_and_pore</td>
+        <td align="right">91</td>
+        <td align="right">56</td>
+        <td align="right">265</td>
+        <td align="right">43</td>
+    </tr>
+    <tr>
+        <td>Excretory_gland</td>
+        <td align="right">205</td>
+        <td align="right">125</td>
+        <td align="right">426</td>
+        <td align="right">18</td>
+    </tr>
+    <tr>
+        <td>G2_and_W_blasts</td>
+        <td align="right">72</td>
+        <td align="right">94</td>
+        <td align="right">941</td>
+        <td align="right">389</td>
+    </tr>
+    <tr>
+        <td>Germline</td>
+        <td align="right">499</td>
+        <td align="right">64</td>
+        <td align="right">88</td>
+        <td align="right">186</td>
+    </tr>
+    <tr>
+        <td>Glia</td>
+        <td align="right">1857</td>
+        <td align="right">55</td>
+        <td align="right">438</td>
+        <td align="right">265</td>
+    </tr>
+    <tr>
+        <td>GLR</td>
+        <td align="right">768</td>
+        <td align="right">149</td>
+        <td align="right">140</td>
+        <td align="right">252</td>
+    </tr>
+    <tr>
+        <td>hmc</td>
+        <td align="right">189</td>
+        <td align="right">39</td>
+        <td align="right">547</td>
+        <td align="right">87</td>
+    </tr>
+    <tr>
+        <td>hmc_and_homolog</td>
+        <td align="right">122</td>
+        <td align="right">122</td>
+        <td align="right">873</td>
+        <td align="right">62</td>
+    </tr>
+    <tr>
+        <td>hmc_homolog</td>
+        <td align="right">155</td>
+        <td align="right">90</td>
+        <td align="right">417</td>
+        <td align="right">74</td>
+    </tr>
+    <tr>
+        <td>hyp1V_and_ant_arc_V</td>
+        <td align="right">112</td>
+        <td align="right">76</td>
+        <td align="right">394</td>
+        <td align="right">97</td>
+    </tr>
+    <tr>
+        <td>Hypodermis</td>
+        <td align="right">7746</td>
+        <td align="right">28</td>
+        <td align="right">744</td>
+        <td align="right">938</td>
+    </tr>
+    <tr>
+        <td>Intestinal_and_rectal_muscle</td>
+        <td align="right">568</td>
+        <td align="right">392</td>
+        <td align="right">96</td>
+        <td align="right">37</td>
+    </tr>
+    <tr>
+        <td>Intestine</td>
+        <td align="right">1732</td>
+        <td align="right">224</td>
+        <td align="right">369</td>
+        <td align="right">39</td>
+    </tr>
+    <tr>
+        <td>M_cell</td>
+        <td align="right">315</td>
+        <td align="right">78</td>
+        <td align="right">517</td>
+        <td align="right">95</td>
+    </tr>
+    <tr>
+        <td>nan (not assigned)</td>
+        <td align="right">35052</td>
+        <td align="right">29</td>
+        <td align="right">375</td>
+        <td align="right">113</td>
+    </tr>
+    <tr>
+        <td>Parent_of_exc_duct_pore_DB_1_3</td>
+        <td align="right">61</td>
+        <td align="right">151</td>
+        <td align="right">52</td>
+        <td align="right">44</td>
+    </tr>
+    <tr>
+        <td>Parent_of_exc_gland_AVK</td>
+        <td align="right">114</td>
+        <td align="right">45</td>
+        <td align="right">192</td>
+        <td align="right">84</td>
+    </tr>
+    <tr>
+        <td>Parent_of_hyp1V_and_ant_arc_V</td>
+        <td align="right">75</td>
+        <td align="right">282</td>
+        <td align="right">980</td>
+        <td align="right">71</td>
+    </tr>
+    <tr>
+        <td>Pharyngeal_gland</td>
+        <td align="right">786</td>
+        <td align="right">149</td>
+        <td align="right">326</td>
+        <td align="right">277</td>
+    </tr>
+    <tr>
+        <td>Pharyngeal_intestinal_valve</td>
+        <td align="right">493</td>
+        <td align="right">173</td>
+        <td align="right">331</td>
+        <td align="right">73</td>
+    </tr>
+</table>
+
+
+</body>
+</html>
